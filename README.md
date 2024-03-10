@@ -13,7 +13,9 @@ This project was created as part of the ASPIRE Hackathon. Our goal was to create
 - The novelty of the idea, to connect to the internet WITHOUT internet , contributes as a major reason to propose the solution.
 - This solution has also paved the way to smoothen the process of connecting a volunteer to the victim at a much higher rate.
 - With the increase in instability , from wars to natural disasters, the solution is a necessity for those in dire need of help. 
-- Unlike earlier times, social media has a much more presence in everyone’s life and has proven to be a huge contributor in connecting the necessary aid. 
+- Unlike earlier times, social media has a much more presence in everyone’s life and has proven to be a huge contributor in connecting the necessary aid.
+
+**ALL THE SECRETS AND KEYS IN THE CODEBASE ARE DUMMY** (Replace them with your own keys and credentials to use the app)
 
 ## How the flow looks?
 
