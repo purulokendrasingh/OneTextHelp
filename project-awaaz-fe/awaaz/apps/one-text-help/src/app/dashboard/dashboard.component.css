@@ -1,0 +1,46 @@
+.example-spacer {
+  flex: 1 1 auto;
+}
+.icon-display {
+  font-size: 30px;
+}
+.card {
+  margin-bottom: 10px;
+  text-align: left;
+}
+.posts {
+  height: calc(100% - 32px);
+  max-height: calc(100% - 32px);
+  overflow-x: auto;
+}
+.primary {
+  background: #673ab7;
+}
+.accent {
+  background: #fff8dc;
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: 25% 50% 25%;
+  grid-template-rows: 100%;
+  background-color: lightblue;
+  height: calc(100% - 64px);
+  max-height: calc(100% - 64px);
+}
+
+@media screen and (max-width: 768px) {
+  .grid-container {
+    grid-template-columns: 0% 100% 0%;
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .grid-container {
+    grid-template-columns: 10% 80% 10%;
+  }
+}
+
+.grid-container > div {
+  border: 1px solid black;
+  text-align: center;
+}

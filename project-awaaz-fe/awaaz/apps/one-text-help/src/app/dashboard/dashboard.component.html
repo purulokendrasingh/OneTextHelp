@@ -1,0 +1,52 @@
+<mat-toolbar color="primary">
+  <h1>OneTextHelp</h1>
+  <span class="example-spacer"></span>
+  <button mat-icon-button class="icon" (click)="openNewPostDialog()">
+    <mat-icon class="icon-display">post_add</mat-icon>
+  </button>
+  <button mat-icon-button (click)="openInfoDialog()">
+    <mat-icon class="icon-display">info</mat-icon>
+  </button>
+</mat-toolbar>
+
+<div class="grid-container">
+  <div></div>
+  <div>
+    <mat-card class="posts">
+      <mat-card-title>Posts</mat-card-title>
+      <mat-divider></mat-divider>
+      <br />
+      <mat-card-content>
+        <h2 *ngIf="posts.length === 0">
+          Loading. Please Wait.
+        </h2>
+        <h2 *ngIf="apiFailed">
+          Something Went Wrong. Please Wait or Refresh.
+        </h2>
+        <ng-container *ngIf="!apiFailed">
+          <mat-card *ngFor="let post of posts" class="card accent">
+            <mat-card-title>{{ post.name || 'NA' }}</mat-card-title>
+            <mat-card-subtitle>{{ post.phone || 'NA' }}</mat-card-subtitle>
+            <mat-card-content>
+              <p>{{ post.message }}</p>
+            </mat-card-content>
+            <mat-card-actions align="end">
+              <a
+                mat-button
+                [attr.href]="'https://twitter.com/OneTextHelp/status/' + post.TweetId"
+                target="_blank"
+                >GO TO <fa-icon [icon]="tweetIcon"></fa-icon></a
+              >
+              <a
+                mat-button
+                shareButton="facebook"
+                >SHARE <fa-icon [icon]="fbIcon"></fa-icon></a
+              >
+            </mat-card-actions>
+          </mat-card>
+        </ng-container>
+      </mat-card-content>
+    </mat-card>
+  </div>
+  <div></div>
+</div>

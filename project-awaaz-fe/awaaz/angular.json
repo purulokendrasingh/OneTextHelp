@@ -1,0 +1,7 @@
+{
+  "version": 2,
+  "projects": {
+    "one-text-help": "apps/one-text-help",
+    "one-text-help-e2e": "apps/one-text-help-e2e"
+  }
+}

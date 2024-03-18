@@ -1,0 +1,33 @@
+/* You can add global styles to this file, and also import other style files */
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 300;
+  src: local("Roboto Light"), local("Roboto-Light"),
+    url("/assets/fonts/roboto-v29-latin-300.woff2")  format("woff2"),
+    url("/assets/fonts/roboto-v29-latin-300.woff") format("woff");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Roboto"), local("Roboto-Regular"),
+    url("/assets/fonts/roboto-v29-latin-regular.woff2")  format("woff2"),
+    url("/assets/fonts/roboto-v29-latin-regular.woff") format("woff");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  src: local("Roboto Medium"), local("Roboto-Medium"),
+    url("/assets/fonts/roboto-v29-latin-500.woff2")  format("woff2"),
+    url("/assets/fonts/roboto-v29-latin-500.woff") format("woff");
+  font-display: swap;
+}
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

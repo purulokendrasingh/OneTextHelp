@@ -1,0 +1,24 @@
+<div *ngIf="!isNewPost" class="info">
+  <h1>Made with <mat-icon color="primary">favorite</mat-icon></h1>
+  <h1>By Pranag, Puru, Shrey and Ashana</h1>
+  <h1>As Part of Aspire Hackathon</h1>
+</div>
+
+<div *ngIf="isNewPost" class="newPost" [formGroup]="form">
+  <mat-form-field appearance="outline">
+    <mat-label>Name</mat-label>
+    <input matInput formControlName="name">
+  </mat-form-field>
+  <mat-form-field appearance="outline">
+    <mat-label>Phone number</mat-label>
+    <input matInput formControlName="phone">
+  </mat-form-field>
+  <mat-form-field class="full-width" appearance="outline">
+    <mat-label>Message</mat-label>
+    <textarea matInput formControlName="message"></textarea>
+  </mat-form-field>
+  <div mat-dialog-actions>
+    <button mat-button (click)="onCancel()">Cancel</button>
+    <button mat-button [disabled]="form.invalid" [mat-dialog-close]="form.value" cdkFocusInitial>Post</button>
+  </div>
+</div>
